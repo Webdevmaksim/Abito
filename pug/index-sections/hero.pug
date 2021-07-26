@@ -1,0 +1,15 @@
+include ../pug-mixins/mixins
+
+section.hero 
+    .container
+        h1.hero__title Рекомендации для вас
+        .hero__block.flex 
+            .hero__cards
+                .row.flex 
+                    +card-good('#','img/goods/scooter/scooter.png','Электросамокат','Электросамокат','10 980 ₽','Казань, р-н Ново-Савиновский','10 июля 11:39')
+                    +card-good('#','img/goods/polimer-fabric/polimer-fabric.png','Пвх материал 2й сорт','Пвх материал 2й сорт','170 ₽','Казань, р-н Вахитовский','10 июля 11:39')
+                    +card-good('#','img/goods/man-coat/man-coat.png','Двухсторонняя ветровка для мальчика','Двухсторонняя ветровка для мальчика','2 110 ₽','Казань, р-н Ново-Савиновский','10 июля 11:39')
+                    +card-good('#','img/goods/furniture-extension-for-baby/furniture-extension-for-baby.png','Пеленальная доска на комод','Пеленальная доска на комод','200 ₽','Казань, р-н Ново-Савиновский','10 июля 11:39')
+                    +card-good('#','img/goods/house-with-land/house-with-land.png','Участок 8 сот. (ИЖС)','Участок 8 сот. (ИЖС)','101 980 ₽','Казань, р-н Ново-Савиновский','10 июля 11:39')
+                    +card-good('#','img/goods/car-ford-fusion(2007)/car-ford-fusion(2007).png','Ford Fusion, 2007','Ford Fusion, 2007','304 000 ₽','Казань, р-н Ново-Савиновский','10 июля 11:39')
+            aside.hero__aside

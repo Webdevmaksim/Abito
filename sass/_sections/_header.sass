@@ -1,0 +1,90 @@
+.header
+    padding-top: 30px
+    @media screen and ( max-width: 480px )
+        padding-top: 26px
+    &__search
+        height: 50px
+        background-color: $blue
+        border-radius: 5px
+        display: flex
+        padding: 3px
+        margin-bottom: 42px
+    &__block
+        margin-bottom: 24px
+        align-items: center
+    // logo
+    &__logo
+        margin-right: 20px
+        +trs(0.3s)
+        &:hover
+            transform: scale(1.03)
+        a
+            text-decoration: none
+            display: inline-flex
+            align-items: center
+            img
+                width: 27px
+                height: 27px
+                margin-right: 6px
+            span
+                font-weight: bold
+                color: $accent
+                font-size: 24px
+                line-height: 28px
+    // Блок с кнопками в хедере
+    &__btns
+        margin-left: auto
+        .btn-transparent
+            text-decoration: none
+            margin-right: 20px
+        .btn-blue
+            text-decoration: none
+            padding: 9px 14px
+            font-size: 14px
+            line-height: 16px
+// Десктопная навигация
+.nav-desktop
+    display: flex
+    align-items: center
+    ul
+        padding-left: 0
+        display: inline-flex
+        list-style: none
+        margin: 0
+        li
+            &:not(:last-child)
+                margin-right: 14px
+            a 
+                text-decoration: none
+                color: $accent
+                font-size: 14px
+                line-height: 16px
+                +trs(0.2s)
+                &:hover
+                    color: $blue
+// Блок поиска
+.search
+    &-input
+        flex-grow: 1
+        border: none
+        outline: none
+        border-radius: 5px
+        padding: 14px 22px
+        color: $accent
+        font-size: 14px
+        line-height: 16px
+        &::placeholder
+            color: $accent
+            font-size: 14px
+            line-height: 16px
+    &-icon
+        margin-right: 5px
+    &-btn
+        background-color: inherit
+        border: none
+        color: $white
+        padding: 16px 17px 16px 20px
+        display: flex
+        align-items: center
+        &:hover
+            cursor: pointer

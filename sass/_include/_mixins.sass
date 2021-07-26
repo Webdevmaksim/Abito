@@ -1,0 +1,10 @@
+@mixin trs($duration)
+	transition: all $duration linear
+
+@mixin font-face($font-name, $path, $weight, $style) 
+	@font-face 
+		font-family: quote($font-name)
+		src: url("#{$path}.woff2") format("woff2"), url("#{$path}.woff") format("woff"), url("#{$path}.ttf") format("ttf")
+		font-weight: #{$weight}
+		font-style: #{$style}
+		font-display: swap

@@ -1,0 +1,11 @@
+mixin card-good(href, src, alt, title, price, location, date)
+    a(href= href).card 
+        .card-img 
+            img(src= src, alt= alt,loading="lazy")
+        .card-title__block
+            h5.card-title= title 
+            .card-title__like 
+                img(src="img/goods/heart.svg", alt="Сердечко")
+        span.card-price= price
+        span.card-location= location
+        span.card-date= date
