@@ -2,9 +2,9 @@ include ../pug-mixins/mixins
 
 section.hero 
     .container
-        h1.hero__title Рекомендации для вас
         .hero__block.flex 
-            .hero__cards
+            main.hero__cards
+                h1.hero__title Рекомендации для вас
                 .row.flex 
                     +card-good('#','img/goods/scooter/scooter.png','Электросамокат','Электросамокат','10 980 ₽','Казань, р-н Ново-Савиновский','10 июля 11:39')
                     +card-good('#','img/goods/polimer-fabric/polimer-fabric.png','Пвх материал 2й сорт','Пвх материал 2й сорт','170 ₽','Казань, р-н Вахитовский','10 июля 11:39')
@@ -12,4 +12,15 @@ section.hero
                     +card-good('#','img/goods/furniture-extension-for-baby/furniture-extension-for-baby.png','Пеленальная доска на комод','Пеленальная доска на комод','200 ₽','Казань, р-н Ново-Савиновский','10 июля 11:39')
                     +card-good('#','img/goods/house-with-land/house-with-land.png','Участок 8 сот. (ИЖС)','Участок 8 сот. (ИЖС)','101 980 ₽','Казань, р-н Ново-Савиновский','10 июля 11:39')
                     +card-good('#','img/goods/car-ford-fusion(2007)/car-ford-fusion(2007).png','Ford Fusion, 2007','Ford Fusion, 2007','304 000 ₽','Казань, р-н Ново-Савиновский','10 июля 11:39')
+                    +card-good('#','img/goods/car-ford-fusion(2007)/car-ford-fusion(2007).png','Ford Fusion, 2007','Ford Fusion, 2007','304 000 ₽','Казань, р-н Ново-Савиновский','10 июля 11:39')
+                    +card-good('#','img/goods/car-ford-fusion(2007)/car-ford-fusion(2007).png','Ford Fusion, 2007','Ford Fusion, 2007','304 000 ₽','Казань, р-н Ново-Савиновский','10 июля 11:39')
+                    +card-good('#','img/goods/house-with-land/house-with-land.png','Участок 8 сот. (ИЖС)','Участок 8 сот. (ИЖС)','101 980 ₽','Казань, р-н Ново-Савиновский','10 июля 11:39')
+                    +card-good('#','img/goods/furniture-extension-for-baby/furniture-extension-for-baby.png','Пеленальная доска на комод','Пеленальная доска на комод','200 ₽','Казань, р-н Ново-Савиновский','10 июля 11:39')
+                    +card-good('#','img/goods/furniture-extension-for-baby/furniture-extension-for-baby.png','Пеленальная доска на комод','Пеленальная доска на комод','200 ₽','Казань, р-н Ново-Савиновский','10 июля 11:39')
             aside.hero__aside
+                h2.hero__aside-title Сервисы и услуги
+                .hero__aside-block
+                    +aside-item('img/aside/delivery.svg','Доставка','Проверка при получении и возможность бесплатно вернуть товар')
+                    +aside-item('img/aside/car.svg','Автотека','Отчёт с историей авто: пробег, владельцы, сведения о залоге, ДТП и ремонтах')
+                    +aside-item('img/aside/house.svg','Онлайн-бронирование жилья','Посуточная аренда квартир и домов: большой выбор вариантов для поездок по России')
+                include ../sections/footer

@@ -1,0 +1,36 @@
+.footer
+    padding-top: 18px
+    &-text 
+        color: $grey 
+        font-size: 14px
+        line-height: 16px
+        &:not(:last-child)
+            margin-bottom: 5px
+    &-menu
+        list-style: none
+        margin-bottom: 16px
+        li 
+            &:not(:last-child)
+                margin-bottom: 5px
+            a
+                color: $grey
+                +trs(0.25s)
+                &:hover
+                    color: darken($grey, 50%)
+            p
+                +trs(0.25s)
+                &:hover
+                    color: darken($grey, 50%)
+        &-link 
+            padding: 0
+            margin: 0
+            list-style: none
+            li 
+                a
+                    color: $accent
+                    font-size: 12px
+                    line-height: 14px
+                    text-decoration: none
+                    +trs(0.3s)
+                    &:hover
+                        color: lighten($accent, 50%)

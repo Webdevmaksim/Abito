@@ -443,6 +443,11 @@ template {
           box-sizing: border-box;
 }
 
+ul {
+  padding-left: 0;
+  margin: 0;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
@@ -450,6 +455,10 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+p {
   margin: 0;
 }
 
@@ -545,7 +554,7 @@ h1, h2, h3, h4, h5 {
 /** Карточка товара **/
 .card {
   width: calc(100%/9*3 - 30px);
-  margin: 15px;
+  margin: 10px 15px;
   text-decoration: none;
   border-radius: 10px;
   -webkit-transition: all 0.2s linear;
@@ -570,10 +579,12 @@ h1, h2, h3, h4, h5 {
 }
 
 .card-img {
-  margin-bottom: 12px;
+  margin-bottom: 9px;
   width: 100%;
   height: 178px;
   border-radius: 10px;
+  overflow: hidden;
+  display: inline-block;
 }
 
 .card-img img {
@@ -602,16 +613,28 @@ h1, h2, h3, h4, h5 {
   padding-right: 3px;
 }
 
+.card-title__block a {
+  text-decoration: none;
+}
+
 .card-title__like {
   width: 15px;
   height: 15px;
+  border: none;
+  background: center/contain no-repeat url("../img/goods/heart.svg");
+  cursor: pointer;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
-.card-title__like img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+.card-title__like:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  background: center/contain no-repeat url("../img/goods/heart-active.svg");
+}
+
+.card-title__like--active {
+  background: center/contain no-repeat url("../img/goods/heart-active.svg");
 }
 
 .card-price {
@@ -634,6 +657,51 @@ h1, h2, h3, h4, h5 {
 .card-date {
   display: block;
   color: #C4C4C4;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+/** Элемент блока aside **/
+.aside-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.aside-item:not(:last-child) {
+  margin-bottom: 28px;
+}
+
+.aside-img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 7px;
+}
+
+.aside-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.aside-title {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #0A143A;
+}
+
+.aside-text {
+  max-width: 217px;
+  color: #0A143A;
+  font-weight: normal;
   font-size: 14px;
   line-height: 16px;
 }
@@ -707,7 +775,7 @@ h1, h2, h3, h4, h5 {
 
 .header__btns .btn-transparent {
   text-decoration: none;
-  margin-right: 20px;
+  margin-right: 25px;
 }
 
 .header__btns .btn-blue {
@@ -810,26 +878,118 @@ h1, h2, h3, h4, h5 {
   cursor: pointer;
 }
 
+.footer {
+  padding-top: 18px;
+}
+
+.footer-text {
+  color: #C4C4C4;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.footer-text:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.footer-menu {
+  list-style: none;
+  margin-bottom: 16px;
+}
+
+.footer-menu li:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.footer-menu li a {
+  color: #C4C4C4;
+  -webkit-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+.footer-menu li a:hover {
+  color: #454545;
+}
+
+.footer-menu li p {
+  -webkit-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+.footer-menu li p:hover {
+  color: #454545;
+}
+
+.footer-menu-link {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.footer-menu-link li a {
+  color: #0A143A;
+  font-size: 12px;
+  line-height: 14px;
+  text-decoration: none;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.footer-menu-link li a:hover {
+  color: #607be4;
+}
+
 /** index-section **/
+.hero__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
 .hero__title {
   margin-bottom: 25px;
   color: #0A143A;
   font-size: 24px;
   line-height: 28px;
-  width: calc( 100%/12*3);
+  width: calc( 100%/9*3);
   display: inline-block;
 }
 
 .hero__cards {
-  width: calc( 100%/12*9);
+  width: calc( 100%/12*9 - 30px);
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .hero__cards {
     width: 100%;
   }
 }
 
 .hero__cards .row {
-  margin: -15px;
+  margin: -10px -15px;
+}
+
+.hero__aside {
+  width: calc( 100%/12*3 - 30px);
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-top: 10px;
+}
+
+.hero__aside-block {
+  padding-bottom: 37px;
+  max-width: 217px;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.hero__aside-title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 21px;
+  color: #0A143A;
+  margin-bottom: 23px;
 }

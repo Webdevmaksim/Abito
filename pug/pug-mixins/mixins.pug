@@ -1,11 +1,20 @@
+//- Карточка товара
 mixin card-good(href, src, alt, title, price, location, date)
-    a(href= href).card 
-        .card-img 
+    .card 
+        a(href="#").card-img 
             img(src= src, alt= alt,loading="lazy")
         .card-title__block
-            h5.card-title= title 
-            .card-title__like 
-                img(src="img/goods/heart.svg", alt="Сердечко")
-        span.card-price= price
-        span.card-location= location
-        span.card-date= date
+            a(href="#") 
+                h5.card-title= title 
+            button.card-title__like
+        strong.card-price= price
+        p.card-location= location
+        p.card-date= date
+
+//- Компонент блока aside
+mixin aside-item(img, title, p)
+    .aside-item 
+        .aside-img 
+            img(src= img, alt= title)
+        h5.aside-title= title 
+        p.aside-text= p 

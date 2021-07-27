@@ -36,43 +36,134 @@
     </header>
     <section class="hero"> 
       <div class="container">
-        <h1 class="hero__title">Рекомендации для вас</h1>
         <div class="hero__block flex"> 
-          <div class="hero__cards">
-            <div class="row flex"> <a class="card" href="#"> 
-                    <div class="card-img"> <img src="img/goods/scooter/scooter.png" alt="Электросамокат" loading="lazy"></div>
-                    <div class="card-title__block">
-                      <h5 class="card-title">Электросамокат</h5>
-                      <div class="card-title__like"> <img src="img/goods/heart.svg" alt="Сердечко"></div>
-                    </div><span class="card-price">10 980 ₽</span><span class="card-location">Казань, р-н Ново-Савиновский</span><span class="card-date">10 июля 11:39</span></a><a class="card" href="#"> 
-                    <div class="card-img"> <img src="img/goods/polimer-fabric/polimer-fabric.png" alt="Пвх материал 2й сорт" loading="lazy"></div>
-                    <div class="card-title__block">
-                      <h5 class="card-title">Пвх материал 2й сорт</h5>
-                      <div class="card-title__like"> <img src="img/goods/heart.svg" alt="Сердечко"></div>
-                    </div><span class="card-price">170 ₽</span><span class="card-location">Казань, р-н Вахитовский</span><span class="card-date">10 июля 11:39</span></a><a class="card" href="#"> 
-                    <div class="card-img"> <img src="img/goods/man-coat/man-coat.png" alt="Двухсторонняя ветровка для мальчика" loading="lazy"></div>
-                    <div class="card-title__block">
-                      <h5 class="card-title">Двухсторонняя ветровка для мальчика</h5>
-                      <div class="card-title__like"> <img src="img/goods/heart.svg" alt="Сердечко"></div>
-                    </div><span class="card-price">2 110 ₽</span><span class="card-location">Казань, р-н Ново-Савиновский</span><span class="card-date">10 июля 11:39</span></a><a class="card" href="#"> 
-                    <div class="card-img"> <img src="img/goods/furniture-extension-for-baby/furniture-extension-for-baby.png" alt="Пеленальная доска на комод" loading="lazy"></div>
-                    <div class="card-title__block">
-                      <h5 class="card-title">Пеленальная доска на комод</h5>
-                      <div class="card-title__like"> <img src="img/goods/heart.svg" alt="Сердечко"></div>
-                    </div><span class="card-price">200 ₽</span><span class="card-location">Казань, р-н Ново-Савиновский</span><span class="card-date">10 июля 11:39</span></a><a class="card" href="#"> 
-                    <div class="card-img"> <img src="img/goods/house-with-land/house-with-land.png" alt="Участок 8 сот. (ИЖС)" loading="lazy"></div>
-                    <div class="card-title__block">
-                      <h5 class="card-title">Участок 8 сот. (ИЖС)</h5>
-                      <div class="card-title__like"> <img src="img/goods/heart.svg" alt="Сердечко"></div>
-                    </div><span class="card-price">101 980 ₽</span><span class="card-location">Казань, р-н Ново-Савиновский</span><span class="card-date">10 июля 11:39</span></a><a class="card" href="#"> 
-                    <div class="card-img"> <img src="img/goods/car-ford-fusion(2007)/car-ford-fusion(2007).png" alt="Ford Fusion, 2007" loading="lazy"></div>
-                    <div class="card-title__block">
-                      <h5 class="card-title">Ford Fusion, 2007</h5>
-                      <div class="card-title__like"> <img src="img/goods/heart.svg" alt="Сердечко"></div>
-                    </div><span class="card-price">304 000 ₽</span><span class="card-location">Казань, р-н Ново-Савиновский</span><span class="card-date">10 июля 11:39</span></a>
+          <main class="hero__cards">
+            <h1 class="hero__title">Рекомендации для вас</h1>
+            <div class="row flex"> 
+                  <div class="card"> <a class="card-img" href="#"> <img src="img/goods/scooter/scooter.png" alt="Электросамокат" loading="lazy"></a>
+                    <div class="card-title__block"><a href="#"> 
+                        <h5 class="card-title">Электросамокат</h5></a>
+                      <button class="card-title__like"></button>
+                    </div><strong class="card-price">10 980 ₽</strong>
+                    <p class="card-location">Казань, р-н Ново-Савиновский</p>
+                    <p class="card-date">10 июля 11:39</p>
+                  </div>
+                  <div class="card"> <a class="card-img" href="#"> <img src="img/goods/polimer-fabric/polimer-fabric.png" alt="Пвх материал 2й сорт" loading="lazy"></a>
+                    <div class="card-title__block"><a href="#"> 
+                        <h5 class="card-title">Пвх материал 2й сорт</h5></a>
+                      <button class="card-title__like"></button>
+                    </div><strong class="card-price">170 ₽</strong>
+                    <p class="card-location">Казань, р-н Вахитовский</p>
+                    <p class="card-date">10 июля 11:39</p>
+                  </div>
+                  <div class="card"> <a class="card-img" href="#"> <img src="img/goods/man-coat/man-coat.png" alt="Двухсторонняя ветровка для мальчика" loading="lazy"></a>
+                    <div class="card-title__block"><a href="#"> 
+                        <h5 class="card-title">Двухсторонняя ветровка для мальчика</h5></a>
+                      <button class="card-title__like"></button>
+                    </div><strong class="card-price">2 110 ₽</strong>
+                    <p class="card-location">Казань, р-н Ново-Савиновский</p>
+                    <p class="card-date">10 июля 11:39</p>
+                  </div>
+                  <div class="card"> <a class="card-img" href="#"> <img src="img/goods/furniture-extension-for-baby/furniture-extension-for-baby.png" alt="Пеленальная доска на комод" loading="lazy"></a>
+                    <div class="card-title__block"><a href="#"> 
+                        <h5 class="card-title">Пеленальная доска на комод</h5></a>
+                      <button class="card-title__like"></button>
+                    </div><strong class="card-price">200 ₽</strong>
+                    <p class="card-location">Казань, р-н Ново-Савиновский</p>
+                    <p class="card-date">10 июля 11:39</p>
+                  </div>
+                  <div class="card"> <a class="card-img" href="#"> <img src="img/goods/house-with-land/house-with-land.png" alt="Участок 8 сот. (ИЖС)" loading="lazy"></a>
+                    <div class="card-title__block"><a href="#"> 
+                        <h5 class="card-title">Участок 8 сот. (ИЖС)</h5></a>
+                      <button class="card-title__like"></button>
+                    </div><strong class="card-price">101 980 ₽</strong>
+                    <p class="card-location">Казань, р-н Ново-Савиновский</p>
+                    <p class="card-date">10 июля 11:39</p>
+                  </div>
+                  <div class="card"> <a class="card-img" href="#"> <img src="img/goods/car-ford-fusion(2007)/car-ford-fusion(2007).png" alt="Ford Fusion, 2007" loading="lazy"></a>
+                    <div class="card-title__block"><a href="#"> 
+                        <h5 class="card-title">Ford Fusion, 2007</h5></a>
+                      <button class="card-title__like"></button>
+                    </div><strong class="card-price">304 000 ₽</strong>
+                    <p class="card-location">Казань, р-н Ново-Савиновский</p>
+                    <p class="card-date">10 июля 11:39</p>
+                  </div>
+                  <div class="card"> <a class="card-img" href="#"> <img src="img/goods/car-ford-fusion(2007)/car-ford-fusion(2007).png" alt="Ford Fusion, 2007" loading="lazy"></a>
+                    <div class="card-title__block"><a href="#"> 
+                        <h5 class="card-title">Ford Fusion, 2007</h5></a>
+                      <button class="card-title__like"></button>
+                    </div><strong class="card-price">304 000 ₽</strong>
+                    <p class="card-location">Казань, р-н Ново-Савиновский</p>
+                    <p class="card-date">10 июля 11:39</p>
+                  </div>
+                  <div class="card"> <a class="card-img" href="#"> <img src="img/goods/car-ford-fusion(2007)/car-ford-fusion(2007).png" alt="Ford Fusion, 2007" loading="lazy"></a>
+                    <div class="card-title__block"><a href="#"> 
+                        <h5 class="card-title">Ford Fusion, 2007</h5></a>
+                      <button class="card-title__like"></button>
+                    </div><strong class="card-price">304 000 ₽</strong>
+                    <p class="card-location">Казань, р-н Ново-Савиновский</p>
+                    <p class="card-date">10 июля 11:39</p>
+                  </div>
+                  <div class="card"> <a class="card-img" href="#"> <img src="img/goods/house-with-land/house-with-land.png" alt="Участок 8 сот. (ИЖС)" loading="lazy"></a>
+                    <div class="card-title__block"><a href="#"> 
+                        <h5 class="card-title">Участок 8 сот. (ИЖС)</h5></a>
+                      <button class="card-title__like"></button>
+                    </div><strong class="card-price">101 980 ₽</strong>
+                    <p class="card-location">Казань, р-н Ново-Савиновский</p>
+                    <p class="card-date">10 июля 11:39</p>
+                  </div>
+                  <div class="card"> <a class="card-img" href="#"> <img src="img/goods/furniture-extension-for-baby/furniture-extension-for-baby.png" alt="Пеленальная доска на комод" loading="lazy"></a>
+                    <div class="card-title__block"><a href="#"> 
+                        <h5 class="card-title">Пеленальная доска на комод</h5></a>
+                      <button class="card-title__like"></button>
+                    </div><strong class="card-price">200 ₽</strong>
+                    <p class="card-location">Казань, р-н Ново-Савиновский</p>
+                    <p class="card-date">10 июля 11:39</p>
+                  </div>
+                  <div class="card"> <a class="card-img" href="#"> <img src="img/goods/furniture-extension-for-baby/furniture-extension-for-baby.png" alt="Пеленальная доска на комод" loading="lazy"></a>
+                    <div class="card-title__block"><a href="#"> 
+                        <h5 class="card-title">Пеленальная доска на комод</h5></a>
+                      <button class="card-title__like"></button>
+                    </div><strong class="card-price">200 ₽</strong>
+                    <p class="card-location">Казань, р-н Ново-Савиновский</p>
+                    <p class="card-date">10 июля 11:39</p>
+                  </div>
             </div>
-          </div>
-          <aside class="hero__aside"></aside>
+          </main>
+          <aside class="hero__aside">
+            <h2 class="hero__aside-title">Сервисы и услуги</h2>
+            <div class="hero__aside-block">
+                  <div class="aside-item"> 
+                    <div class="aside-img"> <img src="img/aside/delivery.svg" alt="Доставка"></div>
+                    <h5 class="aside-title">Доставка</h5>
+                    <p class="aside-text">Проверка при получении и возможность бесплатно вернуть товар</p>
+                  </div>
+                  <div class="aside-item"> 
+                    <div class="aside-img"> <img src="img/aside/car.svg" alt="Автотека"></div>
+                    <h5 class="aside-title">Автотека</h5>
+                    <p class="aside-text">Отчёт с историей авто: пробег, владельцы, сведения о залоге, ДТП и ремонтах</p>
+                  </div>
+                  <div class="aside-item"> 
+                    <div class="aside-img"> <img src="img/aside/house.svg" alt="Онлайн-бронирование жилья"></div>
+                    <h5 class="aside-title">Онлайн-бронирование жилья</h5>
+                    <p class="aside-text">Посуточная аренда квартир и домов: большой выбор вариантов для поездок по России</p>
+                  </div>
+            </div>
+            <footer class="footer"> 
+              <p class="footer-text">© ООО «Абито», 2011–2021</p>
+              <ul class="footer-menu"> 
+                <li> <a href="#"> 
+                    <p class="footer-text">Политика конфиденциальности</p></a></li>
+                <li> <a href="#"> 
+                    <p class="footer-text">Обработка данных</p></a></li>
+              </ul>
+              <ul class="footer-menu-link"> 
+                <li> <a href="#">Реклама на сайте</a></li>
+                <li> <a href="#">Вакансии</a></li>
+                <li> <a href="#">Помощь</a></li>
+              </ul>
+            </footer>
+          </aside>
         </div>
       </div>
     </section>
